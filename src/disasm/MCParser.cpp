@@ -9,6 +9,7 @@
 #include "MCParser.h"
 #include "RawInstWrapper.h"
 #include <cassert>
+#include <stdexcept>
 
 namespace disasm {
 
