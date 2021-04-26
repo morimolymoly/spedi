@@ -861,6 +861,8 @@ void SectionDisassemblyAnalyzerARM::buildCallGraph() {
 
 void SectionDisassemblyAnalyzerARM::buildProcedure
     (ICFGNode &proc_node) noexcept {
+
+    // NEED FIX!!!!!!!!!!!!!!!
     assert(proc_node.entryAddr() < proc_node.m_estimated_end_addr
                && "Invalid end address");
     if (proc_node.entryAddr() % 4 != 0) {
